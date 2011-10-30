@@ -1,8 +1,9 @@
 ﻿/*
- * Copyright 2011 Xamarin, Inc.
+ * Copyright 2011 Xamarin, Inc & Christopher Gooley
  *
  * Author(s):
  * 	Gonzalo Paniagua Javier (gonzalo@xamarin.com)
+ *  Christopher Gooley / FolioHD (gooley@foliohd.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,7 +34,14 @@ namespace Xamarin.Payments.Stripe {
         public string ID { get; set; }
         [JsonProperty (PropertyName = "deleted")]
         public bool Deleted { get; set; }
+
         [JsonProperty (PropertyName = "active_card")]
         public StripeCard Card { get; set; }
+
+        [JsonProperty(PropertyName = "subscription")]
+        public StripeSubscription Subscription { get; set; }
+
+        [JsonProperty(PropertyName = "next_recurring_charge")]
+        public StripeNextRecurringCharge NextRecurringCharge { get; set; }
     }
 }

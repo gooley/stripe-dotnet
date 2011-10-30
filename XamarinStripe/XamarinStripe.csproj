@@ -31,9 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=4.0.2.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Deps\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -45,6 +44,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="StripeInvoice.cs" />
+    <Compile Include="StripeWebHookSuccessfulRecurringPayment.cs" />
+    <Compile Include="StripeWebHook.cs" />
+    <Compile Include="StripeSubscriptionInfo.cs" />
+    <Compile Include="StripeNextRecurringCharge.cs" />
+    <Compile Include="StripeSubscription.cs" />
+    <Compile Include="StripePlan.cs" />
     <Compile Include="DateTimeExtensions.cs" />
     <Compile Include="StripeCard.cs" />
     <Compile Include="StripeCharge.cs" />

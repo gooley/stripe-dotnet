@@ -1,8 +1,9 @@
 ﻿/*
- * Copyright 2011 Xamarin, Inc.
+ * Copyright 2011 Xamarin, Inc & Christopher Gooley
  *
  * Author(s):
  * 	Gonzalo Paniagua Javier (gonzalo@xamarin.com)
+ *  Christopher Gooley / FolioHD (gooley@foliohd.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -258,6 +259,34 @@ namespace Xamarin.Payments.Stripe {
             string ep = String.Format ("{0}/customers/{1}", api_endpoint, HttpUtility.UrlEncode (customer_id));
             string json = DoRequest (ep, "DELETE", null);
             return JsonConvert.DeserializeObject<StripeCustomer> (json);
+        }
+        #endregion
+
+        #region Subscriptions
+
+        public StripeSubscription UpdateCustomerSubscription(string customer_id, StripeSubscriptionInfo subscription)
+        {
+            if (String.IsNullOrEmpty(customer_id))
+                throw new ArgumentNullException("customer_id");
+
+            StringBuilder str = new StringBuilder();
+            subscription.UrlEncode(str);
+            if (str.Length > 0)
+                str.Length--;
+
+            string ep = String.Format("{0}/customers/{1}/subscription", api_endpoint, HttpUtility.UrlEncode(customer_id));
+            string json = DoRequest(ep, "POST", str.ToString());
+            return JsonConvert.DeserializeObject<StripeSubscription>(json);
+        }
+
+        public StripeSubscription DeleteCustomerSubscription(string customer_id, bool at_period_end)
+        {
+            if (String.IsNullOrEmpty(customer_id))
+                throw new ArgumentNullException("customer_id");
+
+            string ep = String.Format("{0}/customers/{1}/subscription", api_endpoint, HttpUtility.UrlEncode(customer_id));
+            string json = DoRequest(ep, "DELETE", null);
+            return JsonConvert.DeserializeObject<StripeSubscription>(json);
         }
         #endregion
 

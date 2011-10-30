@@ -1,7 +1,8 @@
+# About the Library
+
 XamarinStripe provides .NET bindings to process online payments with Stripe.com.
 
-Currently the bindings support the charge, refund, customer, subscription APIs.
-Missing support for plan management, and coupons.
+Currently the bindings support the charge, refund, customer, subscription APIs and some webhook support. It is missing support for plan management, and coupons.
 
 	XamarinStripe/
 
@@ -10,3 +11,22 @@ Missing support for plan management, and coupons.
 	PaymentTest/
 
 		Sample program using the library
+
+# Where is this library used in Production?
+
+*	FolioHD - [online portfolios](http://foliohd.com "FolioHD") (since Oct-2011)
+*	more?
+
+# What's the license?
+
+	Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with the License. 
+
+	You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+Author(s):
+*	Gonzalo Paniagua Javier (gonzalo@xamarin.com)
+*	Christopher Gooley / FolioHD (gooley@foliohd.com)
+
+Copyright 2011 Xamarin, Inc & Christopher Gooley

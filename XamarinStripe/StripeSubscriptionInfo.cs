@@ -21,7 +21,7 @@ using System.Globalization;
 using System.Text;
 using System.Web;
 
-namespace Xamarin.Payments.Stripe
+namespace Stripe
 {
     public class StripeSubscriptionInfo
     {

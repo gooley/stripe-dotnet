@@ -21,7 +21,7 @@ using System.Net;
 
 using Newtonsoft.Json;
 
-namespace Xamarin.Payments.Stripe
+namespace Stripe
 {
     [JsonObject(MemberSerialization.OptIn)]
     public class StripeException : Exception

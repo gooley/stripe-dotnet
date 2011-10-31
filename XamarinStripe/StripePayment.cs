@@ -26,7 +26,7 @@ using System.Web;
 
 using Newtonsoft.Json;
 
-namespace Xamarin.Payments.Stripe {
+namespace Stripe {
     public class StripePayment {
         static string api_endpoint = "https://api.stripe.com/v1";
         static string user_agent = "Stripe .NET v1";

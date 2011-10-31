@@ -19,7 +19,7 @@
 using System;
 using Newtonsoft.Json;
 
-namespace Xamarin.Payments.Stripe {
+namespace Stripe {
     [JsonObject (MemberSerialization.OptIn)]
     public class StripePlan {
         [JsonProperty (PropertyName = "interval")]

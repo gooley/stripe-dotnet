@@ -21,7 +21,7 @@ using System;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace Xamarin.Payments.Stripe {
+namespace Stripe {
     public class UnixDateTimeConverter : DateTimeConverterBase {
         static bool IsNullable (Type type)
         {

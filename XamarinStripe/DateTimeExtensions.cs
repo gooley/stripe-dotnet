@@ -18,7 +18,7 @@
  */
 using System;
 
-namespace Xamarin.Payments.Stripe {
+namespace Stripe {
     public static class DateTimeExtensions {
         static DateTime epoch = new DateTime (1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
 

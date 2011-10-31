@@ -8,8 +8,8 @@
     <ProjectGuid>{218CF4C2-C457-43E4-9D1B-0880D10181FF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Xamarin.Payments.Stripe</RootNamespace>
-    <AssemblyName>XamarinStripe</AssemblyName>
+    <RootNamespace>Stripe</RootNamespace>
+    <AssemblyName>Stripe</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

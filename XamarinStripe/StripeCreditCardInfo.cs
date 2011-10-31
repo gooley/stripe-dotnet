@@ -20,7 +20,7 @@ using System;
 using System.Text;
 using System.Web;
 
-namespace Xamarin.Payments.Stripe {
+namespace Stripe {
     public class StripeCreditCardInfo {
         // Mandatory
         public string Number { get; set; }

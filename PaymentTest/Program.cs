@@ -18,7 +18,7 @@
  */
 using System;
 using System.Collections.Generic;
-using Xamarin.Payments.Stripe;
+using Stripe;
 
 namespace PaymentTest {
     class Program {

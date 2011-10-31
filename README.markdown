@@ -16,8 +16,8 @@ Currently, the library supports the charge, refund, customer, subscription APIs,
 
 # Where is this library used in Production?
 
-*	FolioHD - [online portfolios](http://foliohd.com "FolioHD") (since Oct-2011)
-*	Xamarin - [Xamarin](http://xamarin.com) (since Aug-2011)
+*	[FolioHD](http://foliohd.com "FolioHD") - online portfolios (since Oct-2011)
+*	[Xamarin](http://xamarin.com) - mobile app development toolkit (since Aug-2011)
 
 # What's the license?
 

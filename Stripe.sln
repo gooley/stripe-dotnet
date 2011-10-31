@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinStripe", "XamarinStripe\XamarinStripe.csproj", "{218CF4C2-C457-43E4-9D1B-0880D10181FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stripe", "Stripe\Stripe.csproj", "{218CF4C2-C457-43E4-9D1B-0880D10181FF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentTest", "PaymentTest\PaymentTest.csproj", "{8E81B2FD-1F8C-4C8C-B5B5-B8600709E505}"
 EndProject

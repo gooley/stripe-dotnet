@@ -48,13 +48,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\XamarinStripe\XamarinStripe.csproj">
-      <Project>{218CF4C2-C457-43E4-9D1B-0880D10181FF}</Project>
-      <Name>XamarinStripe</Name>
-    </ProjectReference>
+    <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <ProjectReference Include="..\Stripe\Stripe.csproj">
+      <Project>{3C8B6FB4-8E98-49DE-82FA-12BFA2773814}</Project>
+      <Name>Stripe</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

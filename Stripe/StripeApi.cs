@@ -27,14 +27,14 @@ using System.Web;
 using Newtonsoft.Json;
 
 namespace Stripe {
-    public class StripePayment {
+    public class StripeApi {
         static string api_endpoint = "https://api.stripe.com/v1";
         static string user_agent = "Stripe .NET v1";
         static Encoding encoding = Encoding.UTF8;
 
         ICredentials credential;
 
-        public StripePayment (string api_key)
+        public StripeApi(string api_key)
         {
             credential = new NetworkCredential (api_key, "");
             TimeoutSeconds = 30;
@@ -87,7 +87,14 @@ namespace Stripe {
                         status_code = resp.StatusCode;
 
                     if ((int)status_code <= 500)
-                        throw StripeException.GetFromJSON (status_code, json_error);
+                        try
+                        {
+                            throw StripeException.GetFromJSON(status_code, json_error);
+                        }
+                        catch (Exception ex)
+                        {
+                            throw new Exception(json_error, wexc);
+                        }
                 }
                 throw;
             }

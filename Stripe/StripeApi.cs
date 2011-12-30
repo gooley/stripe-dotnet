@@ -87,14 +87,22 @@ namespace Stripe {
                         status_code = resp.StatusCode;
 
                     if ((int)status_code <= 500)
+                    {
+                        Exception theError = null;
                         try
                         {
-                            throw StripeException.GetFromJSON(status_code, json_error);
+                            theError = StripeException.GetFromJSON(status_code, json_error);
                         }
                         catch (Exception ex)
                         {
                             throw new Exception(json_error, wexc);
                         }
+
+                        if (theError != null)
+                        {
+                            throw theError;
+                        }
+                    }
                 }
                 throw;
             }
